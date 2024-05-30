@@ -8,13 +8,18 @@ import sys
 # In this script, replace the API_KEY with yours
 # Call the script with a text file as parameter
 
-API_KEY = 'AIreplacebyyourkeyV0'
+API_KEY = 'APIKEY'
 
 ai.configure(api_key=API_KEY)
 
 model = ai.GenerativeModel("gemini-pro")
 
-filename=sys.argv[1]
+try:
+    filename=sys.argv[1]
+except:
+    print("This script summarizes a text. Please hand over a text file as parameter.")
+    exit(1)
+
 filecontent=open(filename, "r").read();
 
 print(model.generate_content(["can you summarize this?",filecontent]).candidates[0].content.parts[0].text)
