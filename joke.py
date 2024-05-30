@@ -1,9 +1,10 @@
 import google.generativeai as ai
+import os
 
 # This program lets AI tell a joke
 # It is useful not only to put a smile on your face, but also to check if you have set up libraries and API keys correctly
 
-API_KEY = 'APIKEY'
+API_KEY = os.environ['APIKEY']
 
 ai.configure(api_key=API_KEY)
 
