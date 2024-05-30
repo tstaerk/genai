@@ -14,8 +14,6 @@ ai.configure(api_key=API_KEY)
 
 model = ai.GenerativeModel("gemini-pro")
 
-chat = model.start_chat()
-
 filename=sys.argv[1]
 filecontent=open(filename, "r").read();
 
