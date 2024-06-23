@@ -17,7 +17,7 @@ model = GenerativeModel("gemini-pro-vision")
 try:
     imagefile=sys.argv[1]
 except:
-    print("This script will describe a picture. Please add a picture file as parameter.")
+    print("This script will read your gas counter. Please add a picture of your gas counter as parameter.")
     exit(1)
 
 if (imagefile[-3:]=="jpg"):
