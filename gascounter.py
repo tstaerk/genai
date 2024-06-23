@@ -3,7 +3,7 @@ import sys
 import base64
 from vertexai.preview.generative_models import GenerativeModel, Part
 
-# This will take the image file handed over as first arguement and have AI describe it
+# This will take an image file handed over as first arguement and have AI interpret it as gas counter and read it.
 
 # To get it run:
 # pip install vertexai
